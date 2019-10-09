@@ -1,0 +1,1 @@
+scp ./light.py raspizerowh:/home/pi/roomLight

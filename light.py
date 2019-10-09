@@ -29,7 +29,7 @@ def fetchData():
 def insertToDb(data):
     dtNow = datetime.datetime.now()
     dtNow = dtNow.astimezone(timezone('Asia/Tokyo'))
-    docRef = db.collection(u'light').document()
+    docRef = db.collection(u'lights').document()
     docRef.set({
         u'value': data['lux'],
         u'createdAt': dtNow
